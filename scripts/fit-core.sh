@@ -328,8 +328,10 @@ function fit_gen_uboot_itb()
 					echo "ERROR: invalid ${spl_file} , unable to find fdt blob"
 				fi
 				offs=`printf %d ${offs} ` # hex -> dec
+				echo ${spl_file}
 				dd if=${spl_file} of=spl/u-boot-spl-old.dtb bs=${offs} skip=1 >/dev/null 2>&1
-				${CHECK_SIGN} -f ${ITB_UBOOT} -k spl/u-boot-spl-old.dtb -s
+				#${CHECK_SIGN} -f ${ITB_UBOOT} -k spl/u-boot-spl-old.dtb -s
+				${CHECK_SIGN} -f ${ITB_UBOOT} -k spl/u-boot-spl.dtb -s
 			fi
 		fi
 
