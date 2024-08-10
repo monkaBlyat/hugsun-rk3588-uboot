@@ -36,7 +36,7 @@
 #include <dm/ofnode.h>
 #include <asm/io.h>
 
-#include "lt9211.h"
+//#include "lt9211.h"
 
 #define DRIVER_VERSION	"v1.0.1"
 
@@ -1357,7 +1357,7 @@ int rockchip_show_logo(void)
 		}
 		/* Load kernel bmp in rockchip_display_fixup() later */
 	}
-	lt9211_init();
+	//lt9211_init();
 	/*
 	 * For rk3566, the mirror win must be enabled after the related
 	 * source win. If error code is EAGAIN, the mirror win may be
