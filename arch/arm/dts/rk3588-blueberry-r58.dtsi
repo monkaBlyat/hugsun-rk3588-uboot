@@ -4,9 +4,9 @@
  *
  */
 
-#include "dt-bindings/usb/pd.h"
+
 #include "rk3588.dtsi"
-#include "rk3588-rk806-single.dtsi"
+
 
 / {
 	/* If hdmirx node is disabled, delete the reserved-memory node here. */
