@@ -6,7 +6,6 @@
 
 #include "dt-bindings/usb/pd.h"
 #include "rk3588.dtsi"
-#include "rk3588-hugsun.dtsi"
 #include "rk3588-rk806-single.dtsi"
 
 / {
